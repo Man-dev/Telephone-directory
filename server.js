@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var _ = require('underscore');
 var db = require('./db.js');
 var app = express();
-PORT = 3000;
+PORT = process.env.PORT || 3000;
 var contacts = [];
 
 //MiddleWare//
